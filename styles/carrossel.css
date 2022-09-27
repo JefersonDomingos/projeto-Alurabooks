@@ -23,4 +23,49 @@
     margin: .5em 0;
 }
 
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
 
+.card__botoes{
+    display:flex;
+    justify-content: space-between;
+}
+
+.botoes__lista{
+    display: flex;
+}
+
+.card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin:1em;
+    padding: 1.5em;
+}
+
+.descricao__titulo{
+    color:var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__livro{
+    font-size:18px;
+    font-weight: 700;
+    color:var(--azul-card);
+    margin: 0.5em 0;
+}
+
+.descricao__livro-assunto{
+    font-size:14px;
+}
+
+.botoes__saiba-mais{
+    background-color: var(--laranja);
+    padding: 1em 1.7em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
