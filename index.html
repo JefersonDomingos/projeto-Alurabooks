@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <title>AluraBooks</title>
 </head>
@@ -47,7 +48,44 @@
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" placeholder="Qual será sua próxima leitura?" class="banner__pesquisa">
-
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+                <!-- Slider main container -->
+        <div class="swiper">
+             <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Livro-Acessibilidade.svg" alt="Livro-Acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/Livro-Angular-firebase.svg" alt="Livro-Angular-Firebase"></div>
+                <div class="swiper-slide"><img src="img/Livro-Angular.svg" alt="Livro-angular"></div>
+                <div class="swiper-slide"><img src="img/Livro-Guia Front-end.svg" alt="Livro-guia-Front-end"></div>
+                <div class="swiper-slide"><img src="img/Livro-Javascript.svg" alt="Livro-JavaScript"></div>
+                <div class="swiper-slide"><img src="img/Livro-MEAN.svg" alt="Livro-MEAN"></div>
+                <div class="swiper-slide"><img src="img/Livro-MetricasAgeis.svg" alt="Livro-Metricas-Ageis"></div>
+                <div class="swiper-slide"><img src="img/Livro-Portugol.svg" alt="Livro-linguagem de programação Portugol"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 </html>
