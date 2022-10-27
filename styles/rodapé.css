@@ -10,3 +10,38 @@ hr{
 .titulo__rodapé{
     color:#000000;
 }
+
+@media screen and (min-width:1024px){
+    .rodapé{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2em;
+    }
+
+    .lista__titulo{
+        font-size: 14px;
+        font-weight: 400;
+        color:var(--cinza);
+        text-transform: uppercase;
+        margin-bottom: 2.5em;
+    }
+    
+    .lista__item{
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .lista__item-imagem{
+        height: 35px;
+        margin-right:.5em;
+    }
+
+    .lista__item-link{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--cinza-escuro);
+        text-decoration: none;
+    }
+
+}
