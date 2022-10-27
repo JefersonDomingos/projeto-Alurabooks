@@ -34,8 +34,8 @@
     top: 100%;
     width: 60vw;
 }
-
-.container__botao:checked~.lista-menu {
+/*Se o container__botão for marcado - lista-menu vai aparecer*/
+.container__botao:checked ~ .lista-menu {
     display: block;
 }
 
@@ -102,5 +102,14 @@
     .opções__link{
         text-decoration:none;
         color: var(--preto);
+    }
+/*Se opções-menu for marcado - lista-menu vai aparecer*/
+    #opções-menu:checked ~ .lista-menu{
+        display:block;
+        width: auto;
+    }
+
+    .opções__botão{
+        display: none;
     }
 }
