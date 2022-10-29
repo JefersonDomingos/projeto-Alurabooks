@@ -11,11 +11,23 @@ hr{
     color:#000000;
 }
 
+.rodapé__lista{
+    display: none;
+}
+
 @media screen and (min-width:1024px){
     .rodapé{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 2em;
+    }
+
+    .titulo__rodapé{
+        font-size: 24px;
+    }
+
+    .rodapé__lista{
+        display: block;
     }
 
     .lista__titulo{

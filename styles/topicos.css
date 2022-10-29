@@ -8,6 +8,7 @@
     color:var(--branco);
     font-weight: 300;
     padding-bottom: 1em;
+    font-family: var(--fonte-principal);
 }
 
 .tópicos__lista{
