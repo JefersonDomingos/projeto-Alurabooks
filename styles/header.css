@@ -24,6 +24,19 @@
     display: none;
 }
 
+/*Se o container__botão for marcado - lista-menu vai aparecer*/
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.container__botao:checked ~ .container__menu-clicado > .cabeçalho__menu-hamburguer{
+    background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked ~ .container__menu-clicado{
+    background: var(--azul-degrade);
+}
+
 .container__imagem {
     padding: 1em;
 }
@@ -33,10 +46,6 @@
     position: absolute;
     top: 100%;
     width: 60vw;
-}
-/*Se o container__botão for marcado - lista-menu vai aparecer*/
-.container__botao:checked ~ .lista-menu {
-    display: block;
 }
 
 .lista-menu__titulo,
@@ -90,11 +99,6 @@
         display:flex;
     }
 
-    .opções__item{
-        padding: 0 1em;
-        text-transform: uppercase;
-    }
-
     .opções__link{
         text-decoration:none;
         color: var(--preto);
@@ -105,8 +109,33 @@
         width: auto;
     }
 
+    #opções-menu:checked ~ .opções__menu-clicado > .opções__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opções__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+        padding: 2em 1em;
+    }
+
+    .opções__item:hover{
+        background: var(--azul-degrade);
+    }
+
     .opções__botão{
         display: none;
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link{
+        /*sobscrever cor de font com background transparente*/
+        -webkit-text-fill-color:var(--branco);
+        text-decoration: none;
     }
 }
 
