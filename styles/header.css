@@ -118,10 +118,11 @@
         padding: 0 1em;
         text-transform: uppercase;
         padding: 2em 1em;
+        cursor: pointer;
     }
 
     .opções__item:hover{
-        background: var(--azul-degrade);
+        transform: scale(1.1);
     }
 
     .opções__botão{
@@ -137,6 +138,11 @@
         -webkit-text-fill-color:var(--branco);
         text-decoration: none;
     }
+
+    .container__imagem:hover {
+        transform: scale(1.1);
+    }
+
 }
 
 @media screen and (min-width:1728px){
@@ -147,6 +153,10 @@
     .opções{
         margin-right: auto;
         margin-left: 3em;
+    }
+
+    .opções__item:hover{
+        transform: scale(1.1);
     }
     
     .container__link{
@@ -160,6 +170,10 @@
 
     .container__texto-dos-ícones{
         display: block;
+    }
+
+    .container__imagem:hover {
+        transform: scale(1.1);
     }
 
     
